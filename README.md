@@ -34,3 +34,13 @@ YOLOv8m (medium) and YOLOv8l (large)
   - Flip
 - Trained with **YOLOv8m** for 30 epochs and saved the best weights
 - Validation done on **valid** set, tested on **test** set
+
+## What Worked
+- YOLOv8m provided high accuracy with fast training when used Google Colab T4 GPU
+- The mAP@50 reached **0.995** on the test dataset
+
+## What Didn’t Work
+- Some misclassifications occurred when bare hands and other covered objects(shoes) were partially visible in the same image
+- The mAP50-95 was comparatively lower due to variations in glove color, lighting, and hand positions
+
+
